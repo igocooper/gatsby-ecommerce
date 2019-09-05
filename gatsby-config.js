@@ -8,6 +8,14 @@ module.exports = {
     `gatsby-plugin-stripe`,
     `gatsby-plugin-react-helmet`,
     {
+      resolve: `gatsby-source-stripe`,
+      options: {
+        objects: ['Product', 'Sku'],
+        secretKey: `sk_test_H7ZUHj3iiSkByCGPi7HXNZpX00hM3nGSc3`,
+        downloadFiles: true
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,

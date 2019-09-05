@@ -2,7 +2,7 @@ import React, {useState} from "react"
 import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Product from "../components/product"
+import Products from "../components/products"
 import SEO from "../components/seo"
 
 const tankTopSkus = [
@@ -40,18 +40,7 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Home" />
       <div>
-        <Product 
-          name="T-Shirt"
-          image="https://st.depositphotos.com/1813303/2640/v/950/depositphotos_26408557-stock-illustration-front-t-shirt-vector.jpg"
-          skus={tShirtSkus}
-          defaultSku={tShirtSkus[1].value}
-        />
-        <Product 
-          name="Tank Top"
-          image="https://st3.depositphotos.com/1001599/18776/v/1600/depositphotos_187769358-stock-illustration-tank-top-vector-line-icon.jpg"
-          skus={tankTopSkus}
-          defaultSku={tankTopSkus[1].value}
-        />
+        <Products/>
       </div>
     </Layout>
   )
